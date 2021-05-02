@@ -22,15 +22,15 @@ $(document).ready(function () {
     updateRowColor();
     // #hour9 textarea to value of locaalstorage key number 'hour-9'
     $("#hour9 #usersched").val(localStorage.getItem("hour9"));
-    $("#hour10 #usersched").val(localStorage.getItem("hour10"));
-    $("#hour11 #usersched").val(localStorage.getItem("hour11"));
-    $("#hour12 #usersched").val(localStorage.getItem("hour12"));
-    $("#hour13 #usersched").val(localStorage.getItem("hour13"));
-    $("#hour14 #usersched").val(localStorage.getItem("hour14"));
-    $("#hour15 #usersched").val(localStorage.getItem("hour15"));
-    $("#hour16 #usersched").val(localStorage.getItem("hour16"));
-    $("#hour17 #usersched").val(localStorage.getItem("hour17"));
-    $("#hour18 #usersched").val(localStorage.getItem("hour18"));
+    $("#hour10 #usersched2").val(localStorage.getItem("hour10"));
+    $("#hour11 #usersched3").val(localStorage.getItem("hour11"));
+    $("#hour12 #usersched4").val(localStorage.getItem("hour12"));
+    $("#hour13 #usersched5").val(localStorage.getItem("hour13"));
+    $("#hour14 #usersched6").val(localStorage.getItem("hour14"));
+    $("#hour15 #usersched7").val(localStorage.getItem("hour15"));
+    $("#hour16 #usersched8").val(localStorage.getItem("hour16"));
+    $("#hour17 #usersched9").val(localStorage.getItem("hour17"));
+    $("#hour18 #usersched10").val(localStorage.getItem("hour18"));
 
     //repeat this..
   }
@@ -39,9 +39,14 @@ $(document).ready(function () {
     let value = $(this).siblings("#usersched").val();
     let key = "hour9";
     localStorage.setItem(key, value);
+
+    cuteTrick();
   }
 
-  //save that to local storage
+  function cuteTrick() {
+    //hide message after so many seconds
+    $("#saved").show().delay(300).fadeOut();
+  }
 
   //show message to user
   //hide message after so many seconds
