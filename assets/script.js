@@ -6,7 +6,7 @@ let scheds = [];
 
 // handle displaying the time
 function displayTime() {
-  let rightNow = moment().format("MMM DD, YYYY [at] hh:mm:ss a");
+  let rightNow = moment().format("MMMM Do YYYY HH:mm");
   timeDisplayEl.text(rightNow);
 }
 
