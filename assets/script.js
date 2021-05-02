@@ -24,7 +24,6 @@ $(document).ready(function () {
   // This function is being called below and will run when the page loads.
   function init() {
     // load data from local storage and put it in the correct row
-    $(".description").html(localStorage.getItem("task"));
     updateRowColor();
     // #hour9 textarea to value of locaalstorage key number 'hour-9'
     $("#hour9 #usersched").val(localStorage.getItem("hour9"));
@@ -35,7 +34,6 @@ $(document).ready(function () {
     //get info the user put in text area
     let value = $(this).siblings("#usersched").val();
     let key = "hour9";
-
     localStorage.setItem(key, value);
   }
 
