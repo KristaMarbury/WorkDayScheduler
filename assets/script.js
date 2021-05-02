@@ -12,11 +12,6 @@ function displayTime() {
 
 setInterval(displayTime, 1000);
 
-$("#hour1").click(function () {
-  alert(textTask1);
-  //save text task1 to local storage and then pull it back
-});
-
 $(document).ready(function () {
   //this wrapper is for the entire code for homework
   //set up an init when the first loads
@@ -28,6 +23,15 @@ $(document).ready(function () {
     // #hour9 textarea to value of locaalstorage key number 'hour-9'
     $("#hour9 #usersched").val(localStorage.getItem("hour9"));
     $("#hour10 #usersched").val(localStorage.getItem("hour10"));
+    $("#hour11 #usersched").val(localStorage.getItem("hour11"));
+    $("#hour12 #usersched").val(localStorage.getItem("hour12"));
+    $("#hour13 #usersched").val(localStorage.getItem("hour13"));
+    $("#hour14 #usersched").val(localStorage.getItem("hour14"));
+    $("#hour15 #usersched").val(localStorage.getItem("hour15"));
+    $("#hour16 #usersched").val(localStorage.getItem("hour16"));
+    $("#hour17 #usersched").val(localStorage.getItem("hour17"));
+    $("#hour18 #usersched").val(localStorage.getItem("hour18"));
+
     //repeat this..
   }
   function saveTask() {
